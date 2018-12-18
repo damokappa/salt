@@ -1,3 +1,6 @@
+include:
+  - states.mysql.restart
+
 mysql_server_config:
   file.managed:
     - name: /etc/my.cnf.d/server.cnf
