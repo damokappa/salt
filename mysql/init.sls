@@ -1,3 +1,3 @@
 include:
-  - mysql.server
-  - mysql.config
+  - states.mysql.mysql-server
+  - states.mysql.config
