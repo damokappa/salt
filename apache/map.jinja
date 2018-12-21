@@ -1,0 +1,10 @@
+# Jinja file to define Apache packages
+{% set apache = salt['grains.filter_by']({
+    'Debian':{
+        'apache-server': 'apache2',
+    },
+
+    'RedHat:' {
+        'apache-server': 'httpd'
+    }
+})%}
