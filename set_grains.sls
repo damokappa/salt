@@ -4,9 +4,8 @@
 
 {% if salt['pkg.version']('apache') %}    
 set_grains_web:
-  roles:
-    grains.append:
-      - value: webserver
+  grains.append:
+    - value: webserver
 {% endif %}
 
 {% if salt['pkg.version']('mysql') %}
