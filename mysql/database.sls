@@ -1,4 +1,4 @@
-{{% for database, arg in salt['pillar.get']('mysql:database', {}).items() %}}
+{% for database, arg in salt['pillar.get']('mysql:database', {}).items() %}
 
 {{ database }}_mysql_db_create:
   mysql_database.present:
@@ -8,4 +8,4 @@
     - connection_pass: {{ pillar['mysql']['root']['password'] }}
     - connection_charset: utf8
 
-{{% endfor %}}
+{% endfor %}
