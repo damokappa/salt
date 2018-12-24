@@ -1,0 +1,2 @@
+/var/nfsshare   172.31.27.143(rw,sync,no_root_squash,no_all_squash) 172.31.29.147(rw,sync,no_root_squash,no_all_squash)
+# /home           172.31.27.143(rw,sync,no_root_squash,no_all_squash) 172.31.29.147(rw,sync,no_root_squash,no_all_squash)
