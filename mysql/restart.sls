@@ -1,6 +1,8 @@
+{% from "states/mysql/map.jinja" import mysql with context %}
+
 mysql_restart:
   module.wait:
     - name: service.restart
-    - m_name: mariadb
-    - watch:
+    - m_name: {{ mysql.service }}
+    - onchanges:
         - mysql_server_config
